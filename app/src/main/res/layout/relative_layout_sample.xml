@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutSampleActivity"
+    android:background="@color/cardview_dark_background"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:text="Relative Layout Sample"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="Button 1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/btn1"
+        android:textSize="15sp"
+        android:text="Button 2" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="Button 3" />
+
+    <TextView
+        android:id="@+id/textS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn3"
+        android:layout_alignStart="@+id/btn3"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp"
+        android:text="User name"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="222dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/textS"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/textS"
+        android:inputType="textPersonName"
+        android:background="@color/white"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textS"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/textS"
+        android:textSize="15sp"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:text="Submit" />
+
+    <Button
+        android:paddingHorizontal="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textS"
+        android:layout_alignStart="@+id/textS"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="120dp"
+        android:textSize="18sp"
+        android:text="Next Layout->"
+        android:textColor="@color/white"
+        android:background="@color/Lblue"
+        android:id="@+id/cNextL"
+        />
+
+
+</RelativeLayout>

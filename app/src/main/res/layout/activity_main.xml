@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/linear_layout_sample"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/black"
+        />
+
+<!--    username-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textSize="20sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:hint="User name"
+
+            />
+
+    </LinearLayout>
+
+<!--    phone no-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_no"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="32dp"
+            />
+
+        <EditText
+            android:id="@+id/phone_no"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginEnd="0dp"
+            android:textSize="20sp"
+            android:hint="Phone no"
+            />
+    </LinearLayout>
+
+<!--    Email ID-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_id"
+            android:textSize="20sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="42dp"
+            />
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginEnd="0dp"
+            android:textSize="20sp"
+            android:hint="Email"
+            />
+    </LinearLayout>
+
+<!--    buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:textSize="18sp"
+            android:layout_marginEnd="40dp"
+            />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+<!--    to next layout-->
+    <Button
+        android:paddingHorizontal="15dp"
+        android:id="@+id/change_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Layout->"
+        android:textColor="@color/white"
+        android:background="@color/Lblue"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">31011120047_Prac5</string>
+    <string name="user_name">User name</string>
+    <string name="linear_layout_sample">Linear Layout Sample</string>
+    <string name="phone_no">Phone No</string>
+    <string name="email_id">Email ID</string>
+</resources>
